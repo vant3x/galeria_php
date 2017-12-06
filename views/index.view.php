@@ -25,13 +25,13 @@
                 <br><br>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui saepe iste dolores, suscipit voluptatem quam necessitatibus officia eligendi aperiam labore temporibus reiciendis beatae cumque nisi omnis odit excepturi consequatur repellat?</p>
             </div> -->
-            <?php foreach($fotos as $fotos):?>
+            <?php foreach($fotos as $foto):?>
                 <div class="thumb">
                     <!-- <a href=""> -->
-                        <img src="fotos/<?php echo $fotos['imagen'] ?>" alt="<?php echo $fotos['titulo'] ?>">
-                        <h3 class="titulo_imagen text-center"><?php echo $fotos['titulo']?></h3>
-                        <p class="description_text text-center"><?php echo $fotos['texto'] ?></p>
-                        <a href="foto.php?id=<?php echo $fotos['id']; ?>" class="btn-mas mas text-center">Leer más</a>
+                        <img src="fotos/<?php echo $foto['imagen'] ?>" alt="<?php echo $foto['titulo'] ?>">
+                        <h3 class="titulo_imagen text-center"><?php echo $foto['titulo']?></h3>
+                        <p class="description_text text-center"><?php echo $foto['texto'] ?></p>
+                        <a href="photo.php?id=<?php echo $foto['id']; ?>" class="btn-mas mas text-center">Leer más</a>
                     <!-- </a> -->
                 </div>
            <?php endforeach;?>

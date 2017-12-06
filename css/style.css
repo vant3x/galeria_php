@@ -17,8 +17,9 @@ h1, h2, h3 ,h4, h5, h6{
     /* font-family: 'Slabo ', serif; */
     font-weight: normal;
 }
-h1 .titulo{
-    position: fixed;
+h1 {
+    color:#09f;
+    /* position: fixed; */
     /* borrar si hay error */
 }
 a{
@@ -79,13 +80,17 @@ header{
 }
  .mas{
     color:#09f;
-    background: #fff;
+    background: rgba(255,255,255,.8);
     padding: 10px 15px;
     text-align: center;
     margin:10px 20px;;
     border-radius: 20px;
+    transition:all .3s ease;
     
     
+}
+.mas:hover{
+    background: rgba(255,255,255,1);
 }
 .text-center{
     text-align: center;

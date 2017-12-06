@@ -12,14 +12,22 @@
 <body>
     <header>
         <div class="contenedor">
-            <h1 class="titulo">Foto 1.jpg</h1>
+            <h1 class="titulo">Titulo:
+                 <?php if (!empty($foto['titulo'])) {
+                     echo $foto['titulo'];
+                 }else{
+                     echo $foto['imagen'];
+                 }
+                 
+                 ?>
+                </h1>
         </div>
     </header>
     
     <div class="contenedor">
         <div class="foto">
-            <img src="../fotos/pexels-photo-134577.jpeg" alt="">
-            <p class="texto"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi sapiente exercitationem voluptates explicabo aperiam deleniti, distinctio amet illum. Ab et dolor distinctio corporis voluptate maxime dolore soluta qui ea in? </p>
+            <img src="fotos/<?php echo $foto['imagen']?>" alt="">
+            <p class="texto"><?php echo $foto['texto'] ?>  </p>
         </div>
         <a href="../index.php" class="regresar"><i class="fa fa-long-arrow-left"></i> Regresar</a>
     </div>

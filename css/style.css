@@ -1,0 +1,240 @@
+*{
+    margin:0;
+    padding:0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    
+    
+}
+body{
+    font-family: 'Slabo 27px', serif;
+    font-size:16px;
+    background: #232931;
+    color:#fff;
+}
+h1, h2, h3 ,h4, h5, h6{
+    /* font-family: 'Slabo ', serif; */
+    font-weight: normal;
+}
+h1 .titulo{
+    position: fixed;
+    /* borrar si hay error */
+}
+a{
+    text-decoration: none;
+    color:#fff;
+}
+a:hover{
+    text-decoration: underline;
+}
+.contenedor{
+    max-width: 1000px;
+    width:90%;
+    margin:auto;
+}
+.izquierda{
+    float:left;
+}
+.derecha{
+    float: right;
+}
+
+/*  Header */
+header{
+    margin: 40px 0;
+    font-size:20px;
+    text-align: center;
+}
+
+/* FOTOS */
+.fotos .contenedor{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+}
+.thumb{
+    width: 42%;
+    margin-bottom: 30px;
+    padding: 0px 0px 50px 0px;
+    outline: 5px solid rgba(255,255,255,0);
+    -webkit-box-shadow: 2px 2px 3px rgba(0,0,0,.4);
+    box-shadow: 2px 2px 3px rgba(0,0,0,.4);
+    -webkit-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+}
+.thumb .titulo_imagen{
+    padding: 10px;
+    font-size: 20px;
+    text-align: center;
+}
+.thumb .description_text{
+    padding: 10px 0px;
+    margin:0px 0px 20px 0px;
+    overflow: hidden;
+    
+}
+ .mas{
+    color:#09f;
+    background: #fff;
+    padding: 10px 15px;
+    text-align: center;
+    margin:10px 20px;;
+    border-radius: 20px;
+    
+    
+}
+.text-center{
+    text-align: center;
+}
+.thumb:hover{
+    outline: 5px solid rgba(255,255,255,1);
+
+}
+.thum a{
+    display: block;
+  
+}
+.thumb img{
+    width: 100%;
+    vertical-align: top;
+}
+
+/* Single foto */
+
+.foto{
+    width: 100%;
+    margin: auto;
+    max-width: 500px;
+    text-align: center;
+
+}
+.foto img{
+    width: 100%;
+    vertical-align: top;
+    -webkit-box-shadow: 2px 2px 3px rgba(0,0,0,0.8);
+    box-shadow: 2px 2px 3px rgba(0,0,0,0.8);
+    margin-bottom: 30px;
+}
+.foto .texto{
+    max-width: 500px;
+    margin-bottom: 30px;
+}
+
+.regresar{
+    padding: 5px 10px;
+    margin-bottom: 30px;
+    display: inline-block;
+    border-radius: 50px;
+    font-size: 16px;
+    border:1px solid rgba(255,255,255,.2);
+    -webkit-transition:all .3s ease;
+    -o-transition:all .3s ease;
+    transition:all .3s ease;
+}
+.regresar:hover{
+    border:1px solid #fff;
+    text-decoration: none;
+}
+.regresa .fa{
+    margin-right: 15px;
+}
+
+/* Footer */
+
+footer .copyright{
+    text-align: center;
+    color:rgba(255,255,255,.5);
+    font-size: 16px;
+    padding: 15px 0;
+
+}
+
+/* Paginacion */
+.paginacion{
+    width: 100%;
+    margin-bottom: 30px;
+    overflow: hidden;
+}
+
+.paginacion a{
+    display: inline-block;
+    padding: 15px 20px;
+    border-radius: 50px;
+    border: 1px solid rgba(255,255,255,.2);
+    -webkit-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+}
+.paginacion a:hover{
+    border: 1px solid #fff;
+    text-decoration: none;
+
+}
+.paginacion .izquierda .fa{
+    margin-right: 10px;
+
+}
+.paginacion .derecha .fa{
+    margin-left: 10px;
+}
+
+/* Formulario */
+
+.formulario{
+    max-width: 500px;
+    width: 90%;
+    margin: auto;
+    margin-bottom: 30px;
+}
+.formulario label{
+    display: block;
+    margin-bottom: 10px;
+}
+
+.formulario .error{
+    border: 1px solid red;
+    padding: 30px;
+    margin-bottom: 30px;
+}
+.formulario input[type="text"],
+.formulario input[type="file"],
+.formulario textarea{
+    width: 100%;
+    margin-bottom: 30px;
+    color: #fff;
+}
+.escrito_form{
+    width: 100%;
+    margin-bottom: 30px;
+    color: #fff;
+    padding: 10px;
+    background: none;
+    border:1px solid rgba(255,255,255,.2);
+}
+.formulario input[type="text"],
+.formulario textarea{
+    padding: 10px;
+    background: none;
+    border:1px solid rgba(255,255,255,.2);
+}
+.formulario .submit{
+    display: inline-block;
+    text-align: center;
+    color: #fff;
+    padding: 15px 20px;
+    border-radius: 50px;
+    border: 1px solid rgba(255,255,255,.2);
+    background: none;
+    cursor: pointer;
+    -webkit-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;    
+}
+.formulario .submit:hover{
+    border:1px solid rgba(255,255,255,1);
+}
+
